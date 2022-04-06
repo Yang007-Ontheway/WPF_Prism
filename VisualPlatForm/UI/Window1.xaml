@@ -1,0 +1,68 @@
+﻿<Window x:Class="VisualPlatForm.UI.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualPlatForm.UI"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Border Background="Green"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Margin="5" Background="Aqua"/>
+            <Border Grid.Column="1" Margin="5" Background="Brown"/>
+            <Border Grid.Column="2" Margin="5" Background="LightGray"/>
+            <Border Grid.Column="3" Margin="5" Background="PaleGreen"/>
+            <Border Grid.Column="4" Margin="5" Background="GreenYellow"/>
+        </Grid>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            
+            <Grid Grid.Row="2"  Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border Grid.Column="0" Margin="5"  Grid.ColumnSpan="2" Background="Aqua"/>
+                <Border  Grid.Row="1"   Grid.Column="0" Margin="5" Background="Beige"/>
+                <Border  Grid.Row="1"   Grid.Column="1" Margin="5" Background="CadetBlue"/>
+                <Border  Grid.Row="2"   Grid.Column="0" Margin="5" Background="Crimson"/>
+                <Border  Grid.Row="3"   Grid.Column="1" Margin="5" Background="CornflowerBlue"/>
+            </Grid>
+            
+            
+            <Grid Grid.Row="2"  Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.6*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Column="0" Margin="5"  Grid.ColumnSpan="2" Background="Black"/>
+                <Border  Grid.Row="1"   Grid.Column="0" Margin="5" Background="LemonChiffon"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
